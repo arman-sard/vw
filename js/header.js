@@ -26,17 +26,8 @@ function initResponsiveSidebarDropdowns() {
 }
 
 
-function close() {
-    let closeMenu = document.getElementById('sidebarSubMenu');
-    closeMenu.onclick = function () {
-
-        console.log("apres")
-    }
-}
-
 
 window.onload = function () {
     initSearchButton();
     initResponsiveSidebarDropdowns();
-    close();
 };
