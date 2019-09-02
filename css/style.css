@@ -431,6 +431,54 @@ header .nav-dropdown-toggle {
   to {
     opacity: 1; } }
 
+.side-menu-fix {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  height: 250px;
+  width: 55px; }
+  @media only screen and (min-width: 480px) and (max-width: 960px) {
+    .side-menu-fix {
+      display: none; } }
+  @media only screen and (max-width: 480px) {
+    .side-menu-fix {
+      display: none; } }
+
+.fix-label {
+  height: 50px;
+  width: 55px;
+  margin-bottom: 1px;
+  position: relative;
+  border-bottom: solid 0.5px transparent;
+  background-color: #2E2E2E; }
+  .fix-label a {
+    display: block;
+    height: 100%; }
+    .fix-label a:hover .slide-out {
+      width: 200px;
+      -webkit-transition: width 0.3s ease-in;
+      -o-transition: width 0.3s ease-in;
+      transition: width 0.3s ease-in; }
+    .fix-label a .label-icon {
+      display: block;
+      height: 100%;
+      background-size: auto 30px;
+      background-repeat: no-repeat; }
+    .fix-label a .slide-out {
+      font-weight: lighter;
+      font-size: 15px;
+      position: absolute;
+      top: 0;
+      right: 55px;
+      width: 0px;
+      height: 100%;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: solid 0.5px transparent;
+      background-color: #2E2E2E;
+      z-index: -1; }
+
 .secondary-menu-wrapper {
   background-color: #333333;
   width: 100%;
@@ -463,7 +511,7 @@ header .nav-dropdown-toggle {
     position: relative; }
     .secondary-menu-container .label-link:not(:last-child) {
       border-right: 1px solid #464646; }
-    @media only screenn and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
       .secondary-menu-container .label-link {
         font-size: 13px; } }
     .secondary-menu-container .label-link .icon {
@@ -524,50 +572,9 @@ header .nav-dropdown-toggle {
   font-weight: lighter;
   padding: 10px;
   border-top: 1px solid #464646; }
-
-.side-menu-fix {
-  position: fixed;
-  right: 0;
-  top: 30%;
-  height: 250px;
-  width: 55px; }
-  @media screen and (max-width: 960px) {
-    .side-menu-fix {
+  @media only screen and (min-width: 960px) {
+    .dropdown-link-xs {
       display: none; } }
-
-.fix-label {
-  height: 50px;
-  width: 55px;
-  position: relative;
-  border-bottom: solid 0.5px gray;
-  background-color: #2E2E2E; }
-  .fix-label a {
-    display: block;
-    height: 100%; }
-    .fix-label a:hover .slide-out {
-      width: 200px;
-      -webkit-transition: width 0.3s ease;
-      -o-transition: width 0.3s ease;
-      transition: width 0.3s ease; }
-    .fix-label a .label-icon {
-      display: block;
-      height: 100%;
-      background-size: auto 30px;
-      background-repeat: no-repeat; }
-    .fix-label a .slide-out {
-      font-weight: lighter;
-      font-size: 15px;
-      position: absolute;
-      top: 0;
-      right: 55px;
-      width: 0px;
-      height: 100%;
-      color: #fff;
-      padding: 15px 0;
-      text-align: center;
-      border-bottom: solid 0.5px gray;
-      background-color: #2E2E2E;
-      z-index: -1; }
 
 * {
   margin: 0;
