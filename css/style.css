@@ -431,6 +431,128 @@ header .nav-dropdown-toggle {
   to {
     opacity: 1; } }
 
+.inner-container {
+  background-image: url("../images/touareg_roadblock_1200x520.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+  @media only screen and (min-width: 480px) and (max-width: 960px) {
+    .inner-container {
+      height: 400px; } }
+  @media only screen and (max-width: 480px) {
+    .inner-container {
+      display: none; } }
+  .inner-container .left {
+    width: 40px;
+    height: 40px; }
+
+.inner-text-container {
+  position: absolute;
+  left: 180px;
+  top: 200px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  color: #fff; }
+  @media only screen and (max-width: 480px) {
+    .inner-text-container {
+      background-color: #333333;
+      width: 100%;
+      left: 0px;
+      top: 55vw;
+      text-align: center;
+      font-size: 4vw; } }
+  .inner-text-container .inner-text-button {
+    background-color: rgba(221, 221, 221, 0.4);
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px; }
+    @media only screen and (max-width: 480px) {
+      .inner-text-container .inner-text-button {
+        display: block;
+        width: 100%; } }
+    .inner-text-container .inner-text-button:hover {
+      background-color: rgba(221, 221, 221, 0.2);
+      -webkit-transition: .3s ease-in;
+      -o-transition: .3s ease-in;
+      transition: .3s ease-in; }
+  .inner-text-container a {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 15px; }
+
+img {
+  display: none;
+  width: 100%; }
+  @media only screen and (max-width: 480px) {
+    img {
+      display: block; } }
+
+.switch-container {
+  position: absolute;
+  right: 70px;
+  top: 10px;
+  text-align: right;
+  line-height: 28px;
+  display: block;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 14px;
+  z-index: 1; }
+  @media only screen and (max-width: 480px) {
+    .switch-container {
+      padding: 3%;
+      top: 0px;
+      right: 0px;
+      position: relative;
+      background-color: #333333; } }
+  .switch-container .switch {
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 30px; }
+    .switch-container .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    .switch-container .switch .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 34px;
+      background-color: rgba(221, 221, 221, 0.7);
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+    .switch-container .switch .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: none;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+    .switch-container .switch input:checked + .slider {
+      background-color: #2196F3;
+      opacity: 1; }
+    .switch-container .switch input:focus + .slider {
+      -webkit-box-shadow: 0 0 1px #2196F3;
+      box-shadow: 0 0 1px #2196F3; }
+    .switch-container .switch input:checked + .slider:before {
+      -webkit-transform: translateX(35px);
+      -ms-transform: translateX(35px);
+      transform: translateX(35px); }
+
 .side-menu-fix {
   position: fixed;
   right: 0;
@@ -524,10 +646,10 @@ header .nav-dropdown-toggle {
         .secondary-menu-container .label-link .icon {
           font-size: 13px; } }
   @media screen and (max-width: 770px) {
-    .secondary-menu-container .off-md {
+    .secondary-menu-container .hidden-md {
       display: none; } }
   @media screen and (max-width: 630px) {
-    .secondary-menu-container .off-s {
+    .secondary-menu-container .hidden-s {
       display: none; } }
   .secondary-menu-container .on {
     display: none; }
@@ -610,11 +732,10 @@ html, body {
     flex-grow: 1; }
 
 .container {
+  position: relative;
   max-width: 1200px;
   width: 100%;
-  margin: auto;
-  padding-left: 5px;
-  padding-right: 5px; }
+  margin: auto; }
 
 .overlay {
   display: none;

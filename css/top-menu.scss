@@ -50,13 +50,13 @@
     }
   }
 
-  .off-md {
+  .hidden-md {
     @media screen and (max-width: 770px) {
       display: none;
     }
   }
 
-  .off-s {
+  .hidden-s {
     @media screen and (max-width: 630px) {
       display: none;
     }

@@ -1,5 +1,150 @@
+@import "media.scss";
+
+.inner-container {
+  background-image: url("../images/touareg_roadblock_1200x520.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+
+  @include media(table) {
+    height: 400px;
+  }
+  @include media(smart) {
+    display: none;
+  }
+
+  .left {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.inner-text-container {
+  position: absolute;
+  left: 180px;
+  top: 200px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  color: #fff;
+
+  @include media(smart) {
+    background-color: #333333;
+    width: 100%;
+    left: 0px;
+    top: 55vw;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .inner-text-button {
+    background-color: rgba(221, 221, 221, .4);
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+
+    @include media(smart) {
+      display: block;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: rgba(221, 221, 221, .2);
+      transition: .3s ease-in;
+    }
+  }
+
+  a {
+    color: #fff;
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}
+
+img {
+  display: none;
+  width: 100%;
+
+  @include media(smart) {
+    display: block;
+  }
+}
 
 
+.switch-container {
+  position: absolute;
+  right: 70px;
+  top: 10px;
+  text-align: right;
+  line-height: 28px;
+  display: block;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 14px;
+  z-index: 1;
+
+  @include media(smart) {
+    padding: 3%;
+    top: 0px;
+    right: 0px;
+    position: relative;
+    background-color: #333333;
+  }
+
+  .switch {
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 30px;
+
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 34px;
+      background-color: rgba(221, 221, 221, 0.7);
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 5px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: none;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+      opacity: 1;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(35px);
+    }
+  }
+}
 
 
 
