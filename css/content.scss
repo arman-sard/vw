@@ -14,9 +14,33 @@
     display: none;
   }
 
+  .arrow {
+    //position: relative;
+    //top: 30%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #fff;
+    background-color: rgba(221, 221, 221, .2);
+  }
+
+  .arrow-label {
+    display: block;
+    height: 100%;
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+  }
+
   .left {
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 70px;
+  }
+
+  .right {
+    position: absolute;
+    top: 40%;
+    right: 70px;
   }
 }
 
@@ -54,15 +78,15 @@
       transition: .3s ease-in;
     }
   }
-
-  a {
-    color: #fff;
-    font-size: 14px;
-    padding-left: 15px;
-  }
 }
 
-img {
+.inner-text-container a {
+  color: #fff;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.carousel-img {
   display: none;
   width: 100%;
 
