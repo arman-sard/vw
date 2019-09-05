@@ -677,10 +677,10 @@ header .nav-dropdown-toggle {
     -o-transition: 1s ease-in;
     transition: 1s ease-in;
     opacity: 0; }
-    .image-gallery-wrapper .image-link-overlay img {
-      margin: 20% 40%;
-      width: 180px;
-      height: 180px; }
+    .image-gallery-wrapper .image-link-overlay .fa-search-plus {
+      color: #fff;
+      margin: 25% 45%;
+      opacity: .7; }
 
 .side-menu-fix {
   position: fixed;
