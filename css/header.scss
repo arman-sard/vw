@@ -16,7 +16,6 @@ header {
   }
 
   .navigation {
-    //width: 50px;
     @media screen and (min-width: 770px) {
       display: none;
     }
@@ -25,8 +24,6 @@ header {
   .menuToggle {
     display: block;
     position: relative;
-    ////top: 10px;
-    //left: 20px;
     z-index: 1;
     user-select: none;
   }
@@ -183,19 +180,6 @@ header {
       background-image: url("../images/vw-small@2x.png");
 
     }
-
-    //@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
-    //only screen and (min-resolution: 192dpi) and (min-width: 768px),
-    //only screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    //  background-image: url("../images/vw-small@2x.png");
-    //}
-
-    //
-    //@media only screen and (-webkit-min-device-pixel-ratio: 2),
-    //only screen and (min-resolution: 192dpi),
-    //only screen and (min-resolution: 2dppx) {
-    //  background-image: url("../images/vw-small@2x.png");
-    //}
   }
 
   .header-nav {
@@ -203,7 +187,6 @@ header {
     position: relative;
     max-width: 1000px;
     width: 100%;
-    //padding-left: 30px;
     @media screen and (max-width: 770px) {
       display: none;
     }
@@ -243,7 +226,6 @@ header {
     }
 
     .search-button {
-      position: absolute;
       top: -1px;
       right: 4px;
       border: 0;
@@ -254,7 +236,7 @@ header {
   }
 
   .search-small-wrapper {
-    //width: 50px;
+
     @media screen and (min-width: 770px) {
       display: none;
     }
@@ -267,13 +249,15 @@ header {
     display: flex;
     width: 100%;
     z-index: -1;
-    transition: all .3s ease 0s;
+
     @media screen and (min-width: 770px) {
       display: none;
     };
 
     &.is_active {
+      transition: all 1s ease-in-out;
       top: 110px;
+      z-index: 1;
     }
   }
 
