@@ -456,11 +456,11 @@ header .nav-dropdown-toggle {
     background-repeat: no-repeat; }
   .inner-container .left {
     position: absolute;
-    top: 20%;
+    top: 200px;
     left: 70px; }
   .inner-container .right {
     position: absolute;
-    top: 20%;
+    top: 200px;
     right: 70px; }
 
 .inner-text-container {
