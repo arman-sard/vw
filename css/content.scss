@@ -462,7 +462,8 @@
 
     @include media(table) {
       background-image: url("/images/myperfect200.jpg");
-      background-position: -20vw ;
+      background-position: -20vw;
+      grid-template-rows: 65% 1fr;
     }
     @include media(smart) {
       grid-template-rows: 84% 1fr;
@@ -470,12 +471,11 @@
     }
 
     .display-left-icon {
-      bottom: 30px;
       text-align: center;
       grid-row: 2 / 3;
 
       @include media(table) {
-        display: none;
+        text-align: left;
       }
 
       a {
@@ -488,10 +488,33 @@
         width: 100px;
         padding-left: 30px;
 
+        @include media(table) {
+          display: none;
+        }
+
         @include media(smart) {
           font-size: 3vw;
           margin: 0;
         }
+      }
+
+      .for-media-table {
+        display: none;
+
+        @include media(table) {
+          display: block;
+          width: 300px;
+          margin: 0 0 0 30px;
+        }
+      }
+    }
+    .for-media-table {
+      display: none;
+
+      @include media(table) {
+        display: block;
+        width: 310px;
+        margin: 4vw;
       }
     }
   }

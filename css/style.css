@@ -862,21 +862,22 @@ header .nav-dropdown-toggle {
     @media only screen and (min-width: 480px) and (max-width: 960px) {
       .multi-display .multi-display-left {
         background-image: url("/images/myperfect200.jpg");
-        background-position: -20vw; } }
+        background-position: -20vw;
+        -ms-grid-rows: 65% 1fr;
+        grid-template-rows: 65% 1fr; } }
     @media only screen and (max-width: 480px) {
       .multi-display .multi-display-left {
         -ms-grid-rows: 84% 1fr;
         grid-template-rows: 84% 1fr;
         background-size: contain; } }
     .multi-display .multi-display-left .display-left-icon {
-      bottom: 30px;
       text-align: center;
       -ms-grid-row: 2;
       -ms-grid-row-span: 1;
       grid-row: 2 / 3; }
       @media only screen and (min-width: 480px) and (max-width: 960px) {
         .multi-display .multi-display-left .display-left-icon {
-          display: none; } }
+          text-align: left; } }
       .multi-display .multi-display-left .display-left-icon a {
         background-image: url("/images/bg-cta.png");
         background-size: contain;
@@ -886,10 +887,27 @@ header .nav-dropdown-toggle {
         color: #000;
         width: 100px;
         padding-left: 30px; }
+        @media only screen and (min-width: 480px) and (max-width: 960px) {
+          .multi-display .multi-display-left .display-left-icon a {
+            display: none; } }
         @media only screen and (max-width: 480px) {
           .multi-display .multi-display-left .display-left-icon a {
             font-size: 3vw;
             margin: 0; } }
+      .multi-display .multi-display-left .display-left-icon .for-media-table {
+        display: none; }
+        @media only screen and (min-width: 480px) and (max-width: 960px) {
+          .multi-display .multi-display-left .display-left-icon .for-media-table {
+            display: block;
+            width: 300px;
+            margin: 0 0 0 30px; } }
+    .multi-display .multi-display-left .for-media-table {
+      display: none; }
+      @media only screen and (min-width: 480px) and (max-width: 960px) {
+        .multi-display .multi-display-left .for-media-table {
+          display: block;
+          width: 310px;
+          margin: 4vw; } }
   .multi-display .multi-display-right {
     background-image: url("/images/hero-carousel-bg.png");
     background-repeat: no-repeat;
