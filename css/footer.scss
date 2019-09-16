@@ -9,9 +9,10 @@
     display: flex;
     text-align: center;
     color: #fff;
-    height: 100%;
-    line-height: 100px;
-    font-size: 20px;
+    line-height: 70px;
+    font-size: 15px;
+    font-weight: lighter;
+
     @include media(smart) {
       text-align: left;
       flex-direction: column;
@@ -22,15 +23,24 @@
     .bottom-menu-link {
       flex-grow: 1;
       border-left: 1px solid #666666;
+
       @include media(smart) {
         padding-left: 20px;
         border-left: none;
         border-bottom: 1px solid #fff;
-        font-weight: lighter;
+        background-image: url('/images/links-module-sprite.png');
+        background-position: 120% 10px;
+        background-repeat: no-repeat;
       }
 
       &:hover {
-        background-color: #000;
+        background-color: #202020;
+      }
+    }
+    .hidden {
+      display: none;
+      @include media(smart) {
+        display: block;
       }
     }
   }
