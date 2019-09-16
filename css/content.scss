@@ -578,22 +578,26 @@
       width: 70px;
       height: 70px;
     }
-
     h1 {
-      color: #464646;
+      padding: 10px 50px;
+      font-size: 32px;
+    }
+    a {
+      line-height: 100px;
+      background-color: #2196F3;
+      color: #fff;
+      padding: 13px 40px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 13px;
+      @include media(smart) {
+        padding: 13px 120px;
+      }
     }
   }
 
-  a {
-    line-height: 100px;
-    background-color: #2196F3;
-    color: #fff;
-    padding: 13px 40px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 13px;
-  }
+
 
   .test-drive-image {
     height: 350px;
@@ -603,9 +607,18 @@
     color: #fff;
     text-align: left;
     padding: 3vw 5vw;
+    @include media(smart) {
+      background-size: contain;
+      background-color: #333333;
+      text-align: center;
+      padding: 31vw 0;
+    }
 
     h1 {
       width: 350px;
+      @include media(smart) {
+        width: 100%;
+      }
     }
 
     p {
@@ -620,6 +633,9 @@
       color: #fff;
       background-color: rgba(221, 221, 221, .5);
       text-decoration: none;
+      @include media(smart) {
+        padding: 10px 43vw;
+      }
     }
   }
 }

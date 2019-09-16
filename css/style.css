@@ -952,8 +952,9 @@ header .nav-dropdown-toggle {
     width: 70px;
     height: 70px; }
   .test-drive .test-drive-icon h1 {
-    color: #464646; }
-  .test-drive a {
+    padding: 10px 50px;
+    font-size: 32px; }
+  .test-drive .test-drive-icon a {
     line-height: 100px;
     background-color: #2196F3;
     color: #fff;
@@ -962,6 +963,9 @@ header .nav-dropdown-toggle {
     font-weight: bold;
     border-radius: 5px;
     font-size: 13px; }
+    @media only screen and (max-width: 480px) {
+      .test-drive .test-drive-icon a {
+        padding: 13px 120px; } }
   .test-drive .test-drive-image {
     height: 350px;
     background-image: url("/images/touareg-360-1200x360.png");
@@ -970,8 +974,17 @@ header .nav-dropdown-toggle {
     color: #fff;
     text-align: left;
     padding: 3vw 5vw; }
+    @media only screen and (max-width: 480px) {
+      .test-drive .test-drive-image {
+        background-size: contain;
+        background-color: #333333;
+        text-align: center;
+        padding: 31vw 0; } }
     .test-drive .test-drive-image h1 {
       width: 350px; }
+      @media only screen and (max-width: 480px) {
+        .test-drive .test-drive-image h1 {
+          width: 100%; } }
     .test-drive .test-drive-image p {
       padding: 15px 0;
       font-size: 19px; }
@@ -982,6 +995,9 @@ header .nav-dropdown-toggle {
       color: #fff;
       background-color: rgba(221, 221, 221, 0.5);
       text-decoration: none; }
+      @media only screen and (max-width: 480px) {
+        .test-drive .test-drive-image a {
+          padding: 10px 43vw; } }
 
 .side-menu-fix {
   position: fixed;
