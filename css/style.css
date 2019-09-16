@@ -945,6 +945,44 @@ header .nav-dropdown-toggle {
         height: 50px;
         margin-top: 10px; }
 
+.test-drive {
+  text-align: center;
+  padding-top: 40px; }
+  .test-drive .test-drive-icon img {
+    width: 70px;
+    height: 70px; }
+  .test-drive .test-drive-icon h1 {
+    color: #464646; }
+  .test-drive a {
+    line-height: 100px;
+    background-color: #2196F3;
+    color: #fff;
+    padding: 13px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 13px; }
+  .test-drive .test-drive-image {
+    height: 350px;
+    background-image: url("/images/touareg-360-1200x360.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: left;
+    padding: 3vw 5vw; }
+    .test-drive .test-drive-image h1 {
+      width: 350px; }
+    .test-drive .test-drive-image p {
+      padding: 15px 0;
+      font-size: 19px; }
+    .test-drive .test-drive-image a {
+      border-radius: 0;
+      line-height: 45px;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: rgba(221, 221, 221, 0.5);
+      text-decoration: none; }
+
 .side-menu-fix {
   position: fixed;
   right: 0;
