@@ -999,6 +999,12 @@ header .nav-dropdown-toggle {
         .test-drive .test-drive-image a {
           padding: 10px 43vw; } }
 
+footer p {
+  color: #464646;
+  font-size: 10px;
+  text-align: right;
+  margin: 1vw 20vw; }
+
 .footer-menu {
   margin: 10px 0;
   width: 100%;
@@ -1041,6 +1047,28 @@ header .nav-dropdown-toggle {
       @media only screen and (max-width: 480px) {
         .footer-menu .bottom-menu-label .hidden {
           display: block; } }
+
+.toolbox-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .toolbox-footer .toolbox-footer-label {
+    padding: 50px 0; }
+    .toolbox-footer .toolbox-footer-label h4 {
+      padding: 20px 0; }
+    .toolbox-footer .toolbox-footer-label a {
+      display: block;
+      text-decoration: none;
+      color: #666666;
+      font-size: 13px;
+      padding: 5px 0; }
 
 .side-menu-fix {
   position: fixed;

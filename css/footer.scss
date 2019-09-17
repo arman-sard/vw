@@ -1,5 +1,12 @@
 @import "media.scss";
 
+footer p {
+  color: #464646;
+  font-size: 10px;
+  text-align: right;
+  margin: 1vw 20vw;
+}
+
 .footer-menu {
   margin: 10px 0;
   width: 100%;
@@ -37,11 +44,35 @@
         background-color: #202020;
       }
     }
+
     .hidden {
       display: none;
       @include media(smart) {
         display: block;
       }
+    }
+  }
+}
+
+.toolbox-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  .toolbox-footer-label {
+    padding: 50px 0;
+
+    h4 {
+      padding: 20px 0;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #666666;
+      font-size: 13px;
+      padding: 5px 0;
     }
   }
 }
