@@ -14,6 +14,7 @@
   }
 }
 
+
 @mixin display-none {
   @media only screen and (max-width: 480px) {
     display: none;
@@ -23,6 +24,7 @@
   }
 }
 
+
 @mixin display-block {
   @media only screen and (max-width: 480px) {
     display: block;
@@ -31,6 +33,20 @@
     display: block;
   }
 }
+
+
+@mixin hidden {
+  @media only screen and (max-width: 480px) {
+    display: block;
+  }
+  @media only screen and (min-width: 480px) and (max-width: 960px) {
+    display: none;
+  }
+  @media only screen and (min-width: 960px) {
+    display: none;
+  }
+}
+
 
 @mixin background-size-contain {
   @media only screen and (max-width: 480px) {

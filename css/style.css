@@ -1059,8 +1059,16 @@ footer p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media only screen and (max-width: 480px) {
+    .toolbox-footer {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
   .toolbox-footer .toolbox-footer-label {
-    padding: 50px 0; }
+    padding: 50px 15px; }
+    @media only screen and (max-width: 480px) {
+      .toolbox-footer .toolbox-footer-label {
+        display: none; } }
     .toolbox-footer .toolbox-footer-label h4 {
       padding: 20px 0; }
     .toolbox-footer .toolbox-footer-label a {
@@ -1069,6 +1077,58 @@ footer p {
       color: #666666;
       font-size: 13px;
       padding: 5px 0; }
+  .toolbox-footer .toolbox-footer-media {
+    text-align: center;
+    padding: 30px 0; }
+  .toolbox-footer .toolbox-footer-btn {
+    margin: 20px 0; }
+    @media only screen and (max-width: 480px) {
+      .toolbox-footer .toolbox-footer-btn {
+        margin: 45px 0; } }
+    .toolbox-footer .toolbox-footer-btn .btn {
+      display: inline;
+      padding: 17px 3vw; }
+      @media only screen and (max-width: 480px) {
+        .toolbox-footer .toolbox-footer-btn .btn {
+          padding: 17px 15vw; } }
+    .toolbox-footer .toolbox-footer-btn .btn-l {
+      background-color: #00a8ec;
+      color: #fff;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px; }
+    .toolbox-footer .toolbox-footer-btn .btn-r {
+      background-color: #cecdcc;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px; }
+  @media only screen and (max-width: 480px) {
+    .toolbox-footer .hidden {
+      display: block; } }
+  @media only screen and (min-width: 480px) and (max-width: 960px) {
+    .toolbox-footer .hidden {
+      display: none; } }
+  @media only screen and (min-width: 960px) {
+    .toolbox-footer .hidden {
+      display: none; } }
+
+.footer-end-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0; }
+  .footer-end-container .footer-end-p {
+    margin: 0 15px;
+    text-align: left;
+    color: #b1b1b1; }
+    @media only screen and (max-width: 480px) {
+      .footer-end-container .footer-end-p {
+        text-align: center; } }
+  .footer-end-container .orange {
+    color: coral; }
+  .footer-end-container .patent {
+    float: right; }
+    @media only screen and (max-width: 480px) {
+      .footer-end-container .patent {
+        float: none; } }
 
 .side-menu-fix {
   position: fixed;
