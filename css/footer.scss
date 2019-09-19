@@ -7,6 +7,10 @@ footer p {
   margin: 2vw 20vw 1vw 20vw;
 }
 
+.hidden {
+  @include hidden;
+}
+
 .footer-menu {
   margin: 10px 0;
   width: 100%;
@@ -81,6 +85,7 @@ footer p {
       color: #666666;
       font-size: 13px;
       padding: 5px 0;
+
       &:hover {
         text-decoration: underline;
       }
@@ -112,6 +117,7 @@ footer p {
       color: #fff;
       border-bottom-left-radius: 5px;
       border-top-left-radius: 5px;
+
       &:hover {
         text-decoration: none;
       }
@@ -130,22 +136,18 @@ footer p {
       }
     }
   }
+}
 
-  .toolbox-icon-container {
+.toolbox-icon-container {
+  @include text-center;
 
-    .toolbox-icon {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      background-color: #cecdcc;
-      background-repeat: no-repeat;
-      background-size: 200px;
-      border-radius: 50px;
-    }
-  }
-
-  .hidden {
-    @include hidden;
+  .toolbox-icon {
+    display: inline-block;
+    width: 45px;
+    height: 50px;
+    background-color: #cecdcc;
+    background-repeat: no-repeat;
+    background-size: 200px;
   }
 }
 
@@ -172,6 +174,7 @@ footer p {
         padding: 0 20px;
         margin: 0;
       }
+
       &:hover {
         text-decoration: underline;
       }

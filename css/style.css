@@ -1005,6 +1005,18 @@ footer p {
   text-align: right;
   margin: 2vw 20vw 1vw 20vw; }
 
+@media only screen and (max-width: 480px) {
+  .hidden {
+    display: block; } }
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 960px) {
+  .hidden {
+    display: none; } }
+
 .footer-menu {
   margin: 10px 0;
   width: 100%;
@@ -1117,23 +1129,22 @@ footer p {
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-  .toolbox-footer .toolbox-icon-container .toolbox-icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #cecdcc;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    border-radius: 50px; }
-  @media only screen and (max-width: 480px) {
-    .toolbox-footer .hidden {
-      display: block; } }
-  @media only screen and (min-width: 480px) and (max-width: 960px) {
-    .toolbox-footer .hidden {
-      display: none; } }
-  @media only screen and (min-width: 960px) {
-    .toolbox-footer .hidden {
-      display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .toolbox-icon-container {
+    text-align: center; } }
+
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+  .toolbox-icon-container {
+    text-align: center; } }
+
+.toolbox-icon-container .toolbox-icon {
+  display: inline-block;
+  width: 45px;
+  height: 50px;
+  background-color: #cecdcc;
+  background-repeat: no-repeat;
+  background-size: 200px; }
 
 .footer-end-container {
   display: -webkit-box;
