@@ -198,7 +198,7 @@
 
     .model-left-pic {
       grid-column: 1 / 2;
-      background-image: url("/images/touareg-mlp-left-image.jpg");
+      background-image: url('../images/touareg-mlp-left-image.jpg');
       background-repeat: no-repeat;
       background-size: contain;
       @include display-none;
@@ -456,12 +456,12 @@
   .multi-display-left {
     display: grid;
     grid-template-rows: 88% 1fr;
-    background-image: url("/images/myperfect582.jpg");
+    background-image: url("../images/myperfect582.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include media(table) {
-      background-image: url("/images/myperfect200.jpg");
+      background-image: url("../images/myperfect200.jpg");
       background-position: -20vw;
       grid-template-rows: 65% 1fr;
     }
@@ -479,7 +479,7 @@
       }
 
       a {
-        background-image: url("/images/bg-cta.png");
+        background-image: url("../images/bg-cta.png");
         background-size: contain;
         background-repeat: no-repeat;
         margin: 30px;
@@ -521,7 +521,7 @@
   }
 
   .multi-display-right {
-    background-image: url("/images/hero-carousel-bg.png");
+    background-image: url("../images/hero-carousel-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 0;
@@ -601,7 +601,7 @@
 
   .test-drive-image {
     height: 350px;
-    background-image: url("/images/touareg-360-1200x360.png");
+    background-image: url('../images/touareg-360-1200x360.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;

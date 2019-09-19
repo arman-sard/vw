@@ -610,7 +610,7 @@ header .nav-dropdown-toggle {
       -ms-grid-column: 1;
       -ms-grid-column-span: 1;
       grid-column: 1 / 2;
-      background-image: url("/images/touareg-mlp-left-image.jpg");
+      background-image: url("../images/touareg-mlp-left-image.jpg");
       background-repeat: no-repeat;
       background-size: contain; }
       @media only screen and (max-width: 480px) {
@@ -856,12 +856,12 @@ header .nav-dropdown-toggle {
     display: grid;
     -ms-grid-rows: 88% 1fr;
     grid-template-rows: 88% 1fr;
-    background-image: url("/images/myperfect582.jpg");
+    background-image: url("../images/myperfect582.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
     @media only screen and (min-width: 480px) and (max-width: 960px) {
       .multi-display .multi-display-left {
-        background-image: url("/images/myperfect200.jpg");
+        background-image: url("../images/myperfect200.jpg");
         background-position: -20vw;
         -ms-grid-rows: 65% 1fr;
         grid-template-rows: 65% 1fr; } }
@@ -879,7 +879,7 @@ header .nav-dropdown-toggle {
         .multi-display .multi-display-left .display-left-icon {
           text-align: left; } }
       .multi-display .multi-display-left .display-left-icon a {
-        background-image: url("/images/bg-cta.png");
+        background-image: url("../images/bg-cta.png");
         background-size: contain;
         background-repeat: no-repeat;
         margin: 30px;
@@ -909,7 +909,7 @@ header .nav-dropdown-toggle {
           width: 310px;
           margin: 4vw; } }
   .multi-display .multi-display-right {
-    background-image: url("/images/hero-carousel-bg.png");
+    background-image: url("../images/hero-carousel-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 0; }
@@ -968,7 +968,7 @@ header .nav-dropdown-toggle {
         padding: 13px 120px; } }
   .test-drive .test-drive-image {
     height: 350px;
-    background-image: url("/images/touareg-360-1200x360.png");
+    background-image: url("../images/touareg-360-1200x360.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -1053,7 +1053,7 @@ footer p {
           background-position: 120% 10px;
           background-repeat: no-repeat; } }
       .footer-menu .bottom-menu-label .bottom-menu-link:hover {
-        background-color: #202020;
+        background-color: #00a8ec;
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s; }
