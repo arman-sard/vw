@@ -734,9 +734,9 @@ header .nav-dropdown-toggle {
     .image-gallery-wrapper .image-gallery-link:hover .image-link-overlay {
       display: block;
       opacity: 1;
-      -webkit-transition: opacity 1s ease-in;
-      -o-transition: opacity 1s ease-in;
-      transition: opacity 1s ease-in; }
+      -webkit-transition: 1s ease-in;
+      -o-transition: 1s ease-in;
+      transition: 1s ease-in; }
   .image-gallery-wrapper img {
     width: 100%;
     height: 100%; }
@@ -1003,7 +1003,7 @@ footer p {
   color: #464646;
   font-size: 10px;
   text-align: right;
-  margin: 1vw 20vw; }
+  margin: 2vw 20vw 1vw 20vw; }
 
 .footer-menu {
   margin: 10px 0;
@@ -1015,7 +1015,7 @@ footer p {
     display: flex;
     text-align: center;
     color: #fff;
-    line-height: 70px;
+    line-height: 90px;
     font-size: 15px;
     font-weight: lighter; }
     @media only screen and (max-width: 480px) {
@@ -1041,7 +1041,12 @@ footer p {
           background-position: 120% 10px;
           background-repeat: no-repeat; } }
       .footer-menu .bottom-menu-label .bottom-menu-link:hover {
-        background-color: #202020; }
+        background-color: #202020;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+    .footer-menu .bottom-menu-label :nth-child(1) {
+      border-left: none; }
     .footer-menu .bottom-menu-label .hidden {
       display: none; }
       @media only screen and (max-width: 480px) {
@@ -1077,6 +1082,8 @@ footer p {
       color: #666666;
       font-size: 13px;
       padding: 5px 0; }
+      .toolbox-footer .toolbox-footer-label a:hover {
+        text-decoration: underline; }
   .toolbox-footer .toolbox-footer-media {
     text-align: center;
     padding: 30px 0; }
@@ -1087,19 +1094,37 @@ footer p {
         margin: 45px 0; } }
     .toolbox-footer .toolbox-footer-btn .btn {
       display: inline;
-      padding: 17px 3vw; }
+      padding: 17px 3vw;
+      text-decoration: none; }
       @media only screen and (max-width: 480px) {
         .toolbox-footer .toolbox-footer-btn .btn {
-          padding: 17px 15vw; } }
+          padding: 15px 15vw; } }
     .toolbox-footer .toolbox-footer-btn .btn-l {
       background-color: #00a8ec;
       color: #fff;
       border-bottom-left-radius: 5px;
       border-top-left-radius: 5px; }
+      .toolbox-footer .toolbox-footer-btn .btn-l:hover {
+        text-decoration: none; }
     .toolbox-footer .toolbox-footer-btn .btn-r {
+      color: #666666;
       background-color: #cecdcc;
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px; }
+      .toolbox-footer .toolbox-footer-btn .btn-r:hover {
+        text-decoration: none;
+        background-color: #e3ebee;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+  .toolbox-footer .toolbox-icon-container .toolbox-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #cecdcc;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    border-radius: 50px; }
   @media only screen and (max-width: 480px) {
     .toolbox-footer .hidden {
       display: block; } }
@@ -1114,9 +1139,31 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 20px 0; }
+  .footer-end-container .footer-end-label {
+    margin: 0 15px; }
+    @media only screen and (max-width: 480px) {
+      .footer-end-container .footer-end-label {
+        text-align: center; } }
+    .footer-end-container .footer-end-label .footer-end-link {
+      display: inline-block;
+      color: #888888;
+      font-size: 12px;
+      font-weight: normal;
+      margin-right: 30px; }
+      @media only screen and (max-width: 480px) {
+        .footer-end-container .footer-end-label .footer-end-link {
+          border-right: 1px solid #888888;
+          padding: 0 20px;
+          margin: 0; } }
+      .footer-end-container .footer-end-label .footer-end-link:hover {
+        text-decoration: underline; }
   .footer-end-container .footer-end-p {
-    margin: 0 15px;
+    margin: 20px 15px 50px;
     text-align: left;
     color: #b1b1b1; }
     @media only screen and (max-width: 480px) {
@@ -1133,7 +1180,7 @@ footer p {
 .side-menu-fix {
   position: fixed;
   right: 0;
-  top: 30%;
+  top: 40%;
   height: 250px;
   width: 55px; }
   @media only screen and (min-width: 480px) and (max-width: 960px) {

@@ -4,7 +4,7 @@ footer p {
   color: #464646;
   font-size: 10px;
   text-align: right;
-  margin: 1vw 20vw;
+  margin: 2vw 20vw 1vw 20vw;
 }
 
 .footer-menu {
@@ -16,10 +16,9 @@ footer p {
     display: flex;
     text-align: center;
     color: #fff;
-    line-height: 70px;
+    line-height: 90px;
     font-size: 15px;
     font-weight: lighter;
-
     @include media(smart) {
       text-align: left;
       flex-direction: column;
@@ -30,7 +29,6 @@ footer p {
     .bottom-menu-link {
       flex-grow: 1;
       border-left: 1px solid #666666;
-
       @include media(smart) {
         padding-left: 20px;
         border-left: none;
@@ -42,7 +40,12 @@ footer p {
 
       &:hover {
         background-color: #202020;
+        transition: .3s;
       }
+    }
+
+    :nth-child(1) {
+      border-left: none;
     }
 
     .hidden {
@@ -78,6 +81,9 @@ footer p {
       color: #666666;
       font-size: 13px;
       padding: 5px 0;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -95,8 +101,9 @@ footer p {
     .btn {
       display: inline;
       padding: 17px 3vw;
+      text-decoration: none;
       @include media(smart) {
-        padding: 17px 15vw;
+        padding: 15px 15vw;
       }
     }
 
@@ -105,14 +112,38 @@ footer p {
       color: #fff;
       border-bottom-left-radius: 5px;
       border-top-left-radius: 5px;
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     .btn-r {
+      color: #666666;
       background-color: #cecdcc;
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #e3ebee;
+        transition: 0.3s;
+      }
     }
   }
+
+  .toolbox-icon-container {
+
+    .toolbox-icon {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background-color: #cecdcc;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      border-radius: 50px;
+    }
+  }
+
   .hidden {
     @include hidden;
   }
@@ -120,19 +151,46 @@ footer p {
 
 .footer-end-container {
   display: flex;
+  flex-direction: column;
   margin: 20px 0;
 
-  .footer-end-p {
+  .footer-end-label {
     margin: 0 15px;
+    @include media(smart) {
+      text-align: center;
+
+    }
+
+    .footer-end-link {
+      display: inline-block;
+      color: #888888;
+      font-size: 12px;
+      font-weight: normal;
+      margin-right: 30px;
+      @include media(smart) {
+        border-right: 1px solid #888888;
+        padding: 0 20px;
+        margin: 0;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-end-p {
+    margin: 20px 15px 50px;
     text-align: left;
     color: #b1b1b1;
     @include media(smart) {
       text-align: center;
     }
   }
+
   .orange {
     color: coral;
   }
+
   .patent {
     float: right;
     @include media(smart) {
