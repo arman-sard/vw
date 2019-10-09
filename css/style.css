@@ -213,14 +213,14 @@ header .search-small-toggle {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  z-index: -1; }
+  z-index: 1; }
   @media screen and (min-width: 770px) {
     header .search-small-toggle {
       display: none; } }
   header .search-small-toggle.is_active {
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     top: 110px;
     z-index: 1; }
 
@@ -517,11 +517,13 @@ header .nav-dropdown-toggle {
   font-size: 14px; }
   @media only screen and (max-width: 480px) {
     .switch-container {
-      padding: 3%;
-      top: 0px;
-      right: 0px;
+      padding: 1%;
+      margin-bottom: 35px;
+      top: 40px;
+      right: 0;
       position: relative;
-      background-color: #333333; } }
+      background-color: #333333;
+      text-align: center; } }
   .switch-container .switch {
     margin-left: 10px;
     position: relative;
@@ -736,11 +738,7 @@ header .nav-dropdown-toggle {
   .image-gallery-wrapper .image-gallery-link {
     position: relative; }
     .image-gallery-wrapper .image-gallery-link:hover .image-link-overlay {
-      display: block;
-      opacity: 1;
-      -webkit-transition: 1s ease-in;
-      -o-transition: 1s ease-in;
-      transition: 1s ease-in; }
+      opacity: 1; }
   .image-gallery-wrapper img {
     width: 100%;
     height: 100%; }
@@ -752,10 +750,9 @@ header .nav-dropdown-toggle {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    display: none;
-    -webkit-transition: 1s ease-in;
-    -o-transition: 1s ease-in;
-    transition: 1s ease-in;
+    -webkit-transition: opacity .3s ease-in 0s;
+    -o-transition: opacity .3s ease-in 0s;
+    transition: opacity .3s ease-in 0s;
     opacity: 0; }
     .image-gallery-wrapper .image-link-overlay .fa-search-plus {
       color: #fff;
@@ -764,7 +761,6 @@ header .nav-dropdown-toggle {
 
 .specification {
   margin: 20px 0;
-  height: 520px;
   background-color: #cecdcc;
   text-align: center;
   height: 100%; }
@@ -1231,14 +1227,15 @@ footer p {
       position: absolute;
       top: 0;
       right: 55px;
-      width: 0px;
+      width: 0;
       height: 100%;
       color: #fff;
       padding: 15px 0;
       text-align: center;
       border-bottom: solid 0.5px transparent;
       background-color: #2E2E2E;
-      z-index: -1; }
+      z-index: -1;
+      white-space: nowrap; }
 
 .secondary-menu-wrapper {
   background-color: #333333;

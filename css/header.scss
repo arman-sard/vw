@@ -248,14 +248,14 @@ header {
     left: 0;
     display: flex;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 
     @media screen and (min-width: 770px) {
       display: none;
     };
 
     &.is_active {
-      transition: all .5s ease-in-out;
+      transition: all 1s ease-in-out;
       top: 110px;
       z-index: 1;
     }
