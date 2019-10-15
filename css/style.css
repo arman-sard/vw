@@ -432,17 +432,30 @@ header .nav-dropdown-toggle {
     opacity: 1; } }
 
 .inner-container {
-  background-image: url("../images/touareg_roadblock_1200x520.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  position: relative; }
   @media only screen and (min-width: 480px) and (max-width: 960px) {
     .inner-container {
       height: 400px; } }
   @media only screen and (max-width: 480px) {
     .inner-container {
       display: none; } }
+  .inner-container .carousel-slider-img {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+  .inner-container .mySlider {
+    display: none; }
   .inner-container .arrow {
     display: inline-block;
     width: 50px;
@@ -454,14 +467,40 @@ header .nav-dropdown-toggle {
     height: 100%;
     background-size: auto 200px;
     background-repeat: no-repeat; }
-  .inner-container .left {
+  .inner-container .left, .inner-container .right {
+    cursor: pointer;
     position: absolute;
     top: 200px;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .inner-container .left:hover, .inner-container .right:hover {
+      background-color: #b1b1b1; }
+  .inner-container .left {
     left: 70px; }
   .inner-container .right {
-    position: absolute;
-    top: 200px;
     right: 70px; }
+  .inner-container .carousel-dots {
+    text-align: center; }
+    .inner-container .carousel-dots .dot {
+      position: relative;
+      top: -30px;
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      -webkit-transition: background-color 0.6s ease;
+      -o-transition: background-color 0.6s ease;
+      transition: background-color 0.6s ease; }
+    .inner-container .carousel-dots .active, .inner-container .carousel-dots .dot:hover {
+      background-color: #717171; }
 
 .inner-text-container {
   position: absolute;
@@ -571,7 +610,7 @@ header .nav-dropdown-toggle {
       transform: translateX(35px); }
 
 .model {
-  margin-top: 5px;
+  margin-top: 30px;
   display: -ms-grid;
   display: grid;
   grid-column-gap: 10px;
@@ -879,7 +918,7 @@ header .nav-dropdown-toggle {
         .multi-display .multi-display-left .display-left-icon {
           text-align: left; } }
       .multi-display .multi-display-left .display-left-icon a {
-        background-image: url("../images/bg-cta.png");
+        background-image: url("../images/icons/bg-cta.png");
         background-size: contain;
         background-repeat: no-repeat;
         margin: 30px;
@@ -1049,7 +1088,7 @@ footer p {
           padding-left: 20px;
           border-left: none;
           border-bottom: 1px solid #fff;
-          background-image: url("../images/links-module-sprite.png");
+          background-image: url("../images/icons/links-module-sprite.png");
           background-position: 120% 10px;
           background-repeat: no-repeat; } }
       .footer-menu .bottom-menu-label .bottom-menu-link:hover {
