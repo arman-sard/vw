@@ -172,7 +172,7 @@
                         <div class="header-dropdown-wrapper">
                             <div class="container dropdown-content">
                                 <div class="nav-section-links">
-                                    <ul class="secondary-nav">
+                                    <ul class="secondary-nav" onmouseover="scrollOff()" onmouseout="scrollOn()">
                                         <li class="secondary-nav-link">
                                             <span class="secondary-link-toggle">Help Me Choose</span>
                                             <div class="secondary-nav-inner">
@@ -818,14 +818,13 @@
                     </label>
                 </div>
                 <div class="inner-container">
-                    <div>
-                        <img class="carousel-slider-img mySlider" src="images/touareg_roadblock_1200x520.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="carousel-slider-img mySlider" src="images/r-line-banner.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="carousel-slider-img mySlider" src="images/volkswagen-touareg-2018-test-opinia-6-1200x520.jpg" alt="">
+                    <div id="js-slider-wrapper" class="slides">
+                        <div class="carousel-slider-img slider-visible">
+                        </div>
+                        <div class="carousel-slider-img slider-visible">
+                        </div>
+                        <div class="carousel-slider-img slider-visible">
+                        </div>
                     </div>
                     <div class="arrow left">
                         <a class="prev" onclick="plusSlides(-1)">

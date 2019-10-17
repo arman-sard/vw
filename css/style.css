@@ -444,18 +444,31 @@ header .nav-dropdown-toggle {
     .inner-container {
       display: none; } }
   .inner-container .carousel-slider-img {
-    -webkit-animation-name: fade;
-    animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s; }
+    width: 0;
+    height: 100%;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; }
+    .inner-container .carousel-slider-img:nth-child(1) {
+      background-image: url("../images/touareg_roadblock_1200x520.jpg"); }
+    .inner-container .carousel-slider-img:nth-child(2) {
+      background-image: url("../images/r-line-banner.jpg"); }
+    .inner-container .carousel-slider-img:nth-child(3) {
+      background-image: url("../images/volkswagen-touareg-2018-test-opinia-6-1200x520.jpg"); }
+    .inner-container .carousel-slider-img.slider-visible {
+      width: 100%; }
+  .inner-container .slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%; }
 
 @keyframes fade {
   from {
     opacity: .4; }
   to {
     opacity: 1; } }
-  .inner-container .mySlider {
-    display: none; }
   .inner-container .arrow {
     display: inline-block;
     width: 50px;
@@ -1392,8 +1405,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
 html, body {
-  height: 100%;
-  margin: 0; }
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 .main-container {
   height: 100%;

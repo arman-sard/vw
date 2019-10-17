@@ -1,7 +1,5 @@
 @import "media.scss";
-
 .inner-container {
-  //background-image: url("../images/touareg_roadblock_1200x520.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -16,16 +14,36 @@
     display: none;
   }
   .carousel-slider-img {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+
+    &:nth-child(1) {
+      background-image: url("../images/touareg_roadblock_1200x520.jpg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../images/r-line-banner.jpg");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../images/volkswagen-touareg-2018-test-opinia-6-1200x520.jpg");
+    }
+
+    &.slider-visible {
+      width: 100%;
+    }
   }
+
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
-
-  .mySlider {
-    display: none;
   }
 
   .arrow {
