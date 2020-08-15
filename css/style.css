@@ -179,7 +179,7 @@ header .search-container {
   position: relative; }
   header .search-container .header-search {
     width: 190px;
-    padding: 6px 0px 6px 10px;
+    padding: 6px 6px 6px 10px;
     display: inline-block;
     vertical-align: middle;
     border: 1px solid lightgray;
@@ -638,7 +638,7 @@ header .nav-dropdown-toggle {
       grid-template-columns: 50% 100%; } }
   @media only screen and (max-width: 480px) {
     .model {
-      -ms-grid-rows: (1fr)[3];
+      -ms-grid-rows: (1fr;)[3];
       grid-template-rows: repeat(3, 1fr);
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr; } }
@@ -1017,7 +1017,8 @@ header .nav-dropdown-toggle {
     font-size: 13px; }
     @media only screen and (max-width: 480px) {
       .test-drive .test-drive-icon a {
-        padding: 13px 120px; } }
+        padding: 13px 30vw;
+        white-space: nowrap; } }
   .test-drive .test-drive-image {
     height: 350px;
     background-image: url("../images/touareg-360-1200x360.png");
@@ -1398,18 +1399,9 @@ footer p {
   list-style-type: none;
   font-family: Noto Sans JP, sans-serif; }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none; }
-
 html, body {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll; }
+  height: 100%;
+  margin: 0; }
 
 .main-container {
   height: 100%;
@@ -1420,10 +1412,11 @@ html, body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .main-container main {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; }
+
+main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
 
 .container {
   position: relative;

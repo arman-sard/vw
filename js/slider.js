@@ -37,6 +37,7 @@ function scrollOff() {
     window.scrollTo(0, 0);
     window.addEventListener('scroll', scrollOff);
 }
+
 function scrollOn(){
     window.removeEventListener('scroll', scrollOff);
 }

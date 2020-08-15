@@ -650,7 +650,8 @@
       border-radius: 5px;
       font-size: 13px;
       @include media(smart) {
-        padding: 13px 120px;
+        padding: 13px 30vw;
+        white-space: nowrap;
       }
     }
   }
